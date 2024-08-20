@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ws_자손결합자</title>
+
+  <style>
+    /* .공백 결합자를 넣어보세요 
+    -> 공백 결합자는 선택자 안에 있는 존재하는 후자 선택자 */
+    #ssafy li {
+      color: blue;
+    }
+  </style>
+<!-- 외부 링크의 순서가 뒤에 나오면 cascading이라 외부가 먼저 -->
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+  <h2>자손 결합자 (Descendant Combinator)</h2>
+  <h3>공백을 사용합니다.</h3>
+  <main id="ssafy">
+    <div>div 태그1</div>
+    <div>div 태그2</div>
+    <p>p 태그</p>
+    <span>span 태그</span>
+    <ul>
+      <li>li 태그1</li>
+      <li><span>li 태그2</span></li>
+      <li>li 태그3</li>
+      <li>li 태그4</li>
+      <span>ssafy 안에 있는 또다른 element의 span 태그</span>
+      <li>li 태그5</li>
+    </ul>
+  </main>
+
+  <span>id = ssafy가 아닌 span 태그 = 포함이 안됨</span>
+</body>
+</html>

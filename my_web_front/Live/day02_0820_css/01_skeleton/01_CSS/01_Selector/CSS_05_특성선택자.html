@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05_특성선택자</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* 선택자를 넣어보세요 */
+
+
+    [name="ssafy"] { color: magenta; }
+    input::placeholder { color: rgb(228, 183, 228); }
+    
+    /* 여기 아래는 순서가 중요하다. 중복된다면 맨 아래의 요소를 고려 */
+    [value = "전송2"] { color: magenta; }
+    [type="search"] { color: rgb(73, 72, 177); }
+    .button { color: green; }
+    
+    
+  </style>
+</head>
+<body>
+  <form action="" method="">
+    <input type="text" name="ssafy" placeholder="Hello SSAFY">
+    <input type="submit" class="button" value="전송하기">
+    <input type="search" class="button" value="전송2">
+  </form>
+</body>
+</html>
+
