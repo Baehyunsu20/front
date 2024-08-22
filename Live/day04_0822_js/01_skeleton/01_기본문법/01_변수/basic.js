@@ -1,0 +1,1 @@
+console.log("외부에서 가져오는 js")
